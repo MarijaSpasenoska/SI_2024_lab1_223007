@@ -1,0 +1,102 @@
+4.  mkdir SI_2024_lab1_223007 
+    cd SI_2024_lab1_223007 
+    git init 
+5.  git remote add origin https://github.com/MarijaSpasenoska/SI_2024_lab1_223007.git
+6.  nano README.md
+    git add README.md
+    git commit -m "Initial commit"
+    git push origin master
+7.  nano SILab1Main.java
+    nano SILab1_1.java
+    nano SILab1_2.java
+    git add *.java
+    git commit -m "Add starter code"
+8.  git push origin master
+9.  git branch bug1
+    git branch bug2
+10. git checkout bug1
+ 
+11.  nano SILab1_1.java
+     if (el.length() % 2 != 0) - се земаат непарните стрингови
+     git commit -am "Fix wrong condition in filterOddLengthStrings"
+12.  git checkout bug2
+13.  nano SILab1_2.java
+     if (el.length() >= minLength) - се земаат стринговите со должина најмалку minLength  
+     git commit -am "Fix wrong condition in makeBigStringFrom"
+14.  git checkout bug1
+15.  nano SILab1Main.java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            list.add(sc.next());
+        }
+       System.out.println(SILab1_1.filterOddLengthStrings(list));
+    }
+}
+      git commit -am "Call method filterOddLenghtStrings in main class"
+16.   git checkout bug2
+
+17.  nano SILab1Main.java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            list.add(sc.next());
+        }
+       System.out.println(SILab1_2.makeBigStringFrom(list));
+    }
+}
+
+      git commit -am "Call method makeBigStringFrom in main class"
+18.   git push --all
+19.   git checkout master
+20.   git merge bug1
+Updating 2416e21..97cdbcb
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+21.  git push origin master
+     git push --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MarijaSpasenoska/SI_2024_lab1_223007.git
+   2416e21..97cdbcb  master -> master
+22.  git checkout bug2
+23.  Појава на конфликт
+<<<<<<< HEAD
+System.out.println(SILab1_1.filterOddLengthStrings(list));
+=======
+System.out.println(SILab1_2.makeBigStringFrom(list));
+>>>>>>> e4d84e6... Call method makeBigStringFrom in main class
+Разрешување на конфликтот: 
+Останува само оваа линја код од локалната гранка другото од гранката master се брише за да нема конфликт.
+System.out.println(SILab1_1.filterOddLengthStrings(list));
+      git add SILab1Main.java
+      git rebase --continue - порака од оваа комада(Successfully rebased and updated refs/heads/bug2).	
+24.   git checkout master
+25    git merge bug2
+Updating 97cdbcb..c7a6ccf
+Fast-forward
+ SILab1_2.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+26.   git push --all
+27.   git push origin bug2 --force

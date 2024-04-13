@@ -1,0 +1,91 @@
+//master
+$ git log
+commit c7a6ccfa1982b830a92181a64a97228511ff3d80 (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:30:27 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 97cdbcba85b93a7161ddd4e5fe2d0c9a05cb0e32 (origin/bug1, bug1)
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:35:32 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit ef2c7f1bd0e4f4483210cc1ef75ce00d41f7e387
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:20:16 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 2416e21541b5bafb84ba94c2e1e865ad43111e16
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:13:42 2024 +0200
+
+    Add starter code
+
+commit fe852dc21240181868af33ba4d40b3fad5f03507
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 15:08:17 2024 +0200
+
+    Initial commit
+
+//bug1
+$ git log
+
+commit 97cdbcba85b93a7161ddd4e5fe2d0c9a05cb0e32 (HEAD -> bug1, origin/bug1)
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:35:32 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit ef2c7f1bd0e4f4483210cc1ef75ce00d41f7e387
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:20:16 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 2416e21541b5bafb84ba94c2e1e865ad43111e16
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:13:42 2024 +0200
+
+    Add starter code
+
+commit fe852dc21240181868af33ba4d40b3fad5f03507
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 15:08:17 2024 +0200
+
+    Initial commit
+
+
+//bug2
+$ git log
+commit c7a6ccfa1982b830a92181a64a97228511ff3d80 (HEAD -> bug2, origin/master, origin/bug2, master)
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:30:27 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 97cdbcba85b93a7161ddd4e5fe2d0c9a05cb0e32 (origin/bug1, bug1)
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:35:32 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit ef2c7f1bd0e4f4483210cc1ef75ce00d41f7e387
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:20:16 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 2416e21541b5bafb84ba94c2e1e865ad43111e16
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 16:13:42 2024 +0200
+
+    Add starter code
+
+commit fe852dc21240181868af33ba4d40b3fad5f03507
+Author: Marija Spasenoska <spasenoskamarija50@gmail.com>
+Date:   Fri Apr 12 15:08:17 2024 +0200
+
+    Initial commit
